@@ -10,7 +10,8 @@ export default function Header() {
     <div className="header">
       {/* // this is for the navigation bar , at the top ,which include order, add
       to cart and so on... */}
-      <img className="header__logo" src="https://bizmonthly.com/wp-content/uploads/2020/04/Amazon-logo-black-template.png" />
+      <img className="header__logo" src="https://bizmonthly.com/wp-content/uploads/2020/04/Amazon-logo-black-template.png" alt="check header.js "
+      />
       {/* // now for search bar , making new div:- //( div.header__search) */}
       <div className="header__search">
 
