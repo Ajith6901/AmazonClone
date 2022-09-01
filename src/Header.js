@@ -4,13 +4,19 @@ import "./Header.css";
 
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import { Link } from 'react-router-dom'; 
 
 export default function Header() {
   return (
     <div className="header">
       {/* // this is for the navigation bar , at the top ,which include order, add
       to cart and so on... */}
-      <img className="header__logo" src="https://bizmonthly.com/wp-content/uploads/2020/04/Amazon-logo-black-template.png" />
+      <Link to="/">
+      <img className="header__logo" src="https://bizmonthly.com/wp-content/uploads/2020/04/Amazon-logo-black-template.png" alt="check header.js "/>
+      </Link>
+      
+      
+       
       {/* // now for search bar , making new div:- //( div.header__search) */}
       <div className="header__search">
 
@@ -47,11 +53,16 @@ export default function Header() {
         {/* for adding the basket icon */}
 
         <div className="header__optionBasket">
-            <ShoppingBasketIcon/>
-
+           
+           <Link to="/checkout"> 
+           <ShoppingBasketIcon/>
+           
+            </Link> 
             <span className="header__optionLineTwo header__basketCount">
                 0
             </span>
+
+            
 
 
         </div>

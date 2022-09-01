@@ -8,32 +8,37 @@ import "./App.css";
 
 import Header from "./Header";
 import Home from "./Home";
-
-import { BrowserRouter as Router, Routes, Route } 
+import Checkout from "./Checkout";
+import { BrowserRouter as Router, Switch, Route }  // to avoid the switch error 
+// run command  :  npm install react-router-dom@5.2.0
 from "react-router-dom";
-
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Routes
-// } from "react-router-dom";
 
 function App() {
   return (
     // BEM
-    // <Router>
+    <Router>
       <div className="App">
 
-        {/* <Routes> */}
+      <Header />    {/* Since , header will be their regardless of  page , 
+                        we will add it outside the switch */}
+        <Switch>
+          
+        
+          <Route path="/checkout">
+            
+            <Checkout/>
 
-          {/* <Route path="/"> */}
-            <Header />
+          </Route>
+
+          <Route path="/">
+            
             <Home />
-          {/* </Route> */}
-        {/* // </Routes> */}
+          </Route>
+
+        </Switch>
 
       </div>
-    // </Router>
+     </Router>
   );
 }
 
