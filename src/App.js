@@ -21,19 +21,19 @@ from "react-router-dom";
 function App() {
   return (
     // BEM
-    <Router>
+    // <Router>
       <div className="App">
 
-        <Routes>
+        {/* <Routes> */}
 
-          <Route path="/">
+          {/* <Route path="/"> */}
             <Header />
             <Home />
-          </Route>
-        </Routes>
+          {/* </Route> */}
+        {/* // </Routes> */}
 
       </div>
-    </Router>
+    // </Router>
   );
 }
 
