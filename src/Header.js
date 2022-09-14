@@ -4,7 +4,7 @@ import "./Header.css";
 
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-import { Link } from 'react-router-dom'; 
+import { BrowserRouter ,Link } from 'react-router-dom'; 
 
 export default function Header() {
   return (
@@ -52,20 +52,19 @@ export default function Header() {
 
         {/* for adding the basket icon */}
 
+        <Link to="/checkout"> 
         <div className="header__optionBasket">
-           
-           <Link to="/checkout"> 
            <ShoppingBasketIcon/>
-           
-            </Link> 
             <span className="header__optionLineTwo header__basketCount">
                 0
             </span>
+            </div>
+          </Link>
 
             
 
 
-        </div>
+        
 
 
       </div>
