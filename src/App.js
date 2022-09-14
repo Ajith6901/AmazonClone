@@ -10,8 +10,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import { BrowserRouter as Router, Routes, Route }  from "react-router-dom";
-// to avoid the switch error 
-// run command  :  npm install react-router-dom@5.2.0
+// run command  :  npm install react-router-dom@6 (if routing not working)
 
 
 function App() {
